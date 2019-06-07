@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43.67 92.78">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #327152;
+      }
+    </style>
+  </defs>
+  <title>sunset-arrow</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_6" data-name="Layer 6">
+      <path class="cls-1" d="M43.67,78.25,30.82,65.53v6.81H24.16a5.82,5.82,0,0,1-5.81-5.81V19.42l6.25-3.88V0L12.3,7.31,0,0V15.54l6.24,3.88V66.53A17.94,17.94,0,0,0,24.16,84.45h6.66v8.33Z"/>
+    </g>
+  </g>
+</svg>
