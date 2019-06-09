@@ -16,10 +16,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="delivery__wrapper">
-    <div>Order online: </div>
-    <a href="https://trycaviar.app.link/RVt2luwaAW" title="Order from Sunset Social on Caviar" class="delivery__logo delivery__logo--caviar"></a>
-    <a href="https://www.grubhub.com/" title="Order from Sunset Social on Grubhub" class="delivery__logo delivery__logo--grubhub"></a>
+  <div class="header__wrapper">
+    <div>Call us: <a href="tel:2676346779" title="Call Sunset Social">267-634-6779</a></div>
+    <div class="delivery__wrapper">
+      <div>Order online: </div>
+      <a href="https://trycaviar.app.link/RVt2luwaAW" title="Order from Sunset Social on Caviar" class="delivery__logo delivery__logo--caviar"></a>
+      <a href="https://www.grubhub.com/" title="Order from Sunset Social on Grubhub" class="delivery__logo delivery__logo--grubhub"></a>
+    </div>
   </div>
   
   <div class="content">

@@ -13,28 +13,6 @@
         </div>
         
         <h1 class="heading footer-heading"></h1>
-        
-        <!-- <div class="text-block-4"><br>join our team, email us today</div> -->
-        
-        <!-- <div class="form-wrapper">
-          <div class="w-form">
-            <form id="wf-form-Job-Inquiry" name="wf-form-Job-Inquiry" data-name="Job Inquiry" class="form">
-              <label for="email" class="field-label">Email Address:</label>
-              <input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="email address" id="email" required="">
-              <input type="submit" value="Submit" data-wait="Please wait..." class="submit-button w-button">
-            </form>
-            
-            <div class="w-form-done">
-              <div>Thank you! Your submission has been received!</div>
-            </div>
-            
-            <div class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
-            </div>
-          </div>
-        </div> -->
-        
-        <!-- <div class="form-arrow"><img src="<?php echo get_template_directory_uri(); ?>/images/sunset-arrow.svg" width="81" alt="" class="image-4"></div> -->
       </div>
       
       <div class="w-container">
@@ -63,15 +41,14 @@
             </div>
           </div>
           
-          <ul class="menu menu--credits">
-            <li><a href="http://brandywinerealty.com/" target="_blank" class="menu-item menu-item-right">Brandywine realty trust</a></li>
-            <li><a href="https://www.warrenhq.com/" target="_blank" class="menu-item menu-item-right">warren</a></li>
-          </ul>
+          <?php wp_nav_menu( array( 'theme_location' => 'menu-3' ) ); ?>  
         </div>
       </div>
     </div>
 
-    <div class="order-button__outer"><a href="https://www.toasttab.com/sunset-social/v2/online-order#!/" title="Order online from Sunset Social" class="order-button__inner">ORDER NOW!</a></div>
+    <div class="order-button__outer">
+      <a href="https://www.toasttab.com/sunset-social/v2/online-order#!/" title="Order online from Sunset Social" class="order-button__inner">ORDER NOW!</a>
+    </div>
   </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

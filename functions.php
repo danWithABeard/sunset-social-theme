@@ -38,7 +38,8 @@ if (function_exists('acf_add_options_page')) {
 function untheme_nav_init() {
   register_nav_menus( array(
     'menu-1' => 'Primary Menu',
-    'menu-2' => 'Footer Contact'
+    'menu-2' => 'Footer Contact',
+    'menu-3' => 'Footer Credits'
   ) );
 }
 add_action( 'init', 'untheme_nav_init' );
