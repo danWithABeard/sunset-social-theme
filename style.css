@@ -808,8 +808,18 @@ p {
     margin-left: 10px;
   }
 
+  .header__wrapper {
+    display: block;
+    text-align: center;
+  }
+
   .menu-section {
     grid-template-columns: 1fr;
+  }
+
+  .delivery__wrapper {
+    justify-content: center;
+    margin: 10px 0;
   }
 
   .menu-section--food {
