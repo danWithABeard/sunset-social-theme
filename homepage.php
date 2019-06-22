@@ -29,7 +29,7 @@
                   <p class="menu__description"><?php the_sub_field('description');?></p>
                   <p class="menu__price"><?php the_sub_field('price'); ?></p>
                 </li>
-              <?php endwhile; ?>  
+              <?php endwhile; ?>
             </ul>
           </div>
         <?php endwhile; ?>
@@ -48,7 +48,7 @@
                   <p class="menu__description"><?php the_sub_field('drink_description');?></p>
                   <p class="menu__price"><?php the_sub_field('drink_price'); ?></p>
                 </li>
-              <?php endwhile; ?>  
+              <?php endwhile; ?>
             </ul>
           </div>
         <?php endwhile; ?>
@@ -78,10 +78,24 @@
   <div class="sunset-social__events-wrapper w-container">
     <h2>Upcoming Events</h2>
     <div class="header-bg__design"></div>
-    <h3>Coming Soon!</h3>
-    <p>Check our facebook for the current schedule</p>
+
+    <?php if( have_rows('event_flyers') ) { ?>
+
+      <?php while( have_rows('event_flyers') ): the_row(); ?>
+        <img class="events__flyer" src="<?php the_sub_field('single_flyer'); ?>" alt="" />
+      <?php endwhile; ?>
+
+    <?php } else { ?>
+
+      <h3>More Events Coming Soon!</h3>
+      <p>Check our facebook for the current schedule</p>
+
+    <?php } ?>
+
     <div class="button--primary">
-      <a href="<?php echo get_home_url(); ?>/events/" title="Book a Party with us"><h3>Book a Party with us</h3></a>
+      <a href="<?php echo get_home_url(); ?>/events/" title="Book a Party with us">
+        <h3>Book a Party with us</h3>
+      </a>
     </div>
   </div>
 

@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Panton, sans-serif;
 }
 
-h3 { 
-  font-size: 18px; 
+h3 {
+  font-size: 18px;
   margin-bottom: 0;
 }
 
@@ -39,7 +39,7 @@ p {
 
 
 .content {
-  background-color: #fff8d3;  
+  background-color: #fff8d3;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -549,6 +549,7 @@ p {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: repeat(3, 1fr);*/
   grid-gap: 15px;
   border-bottom: 4px dotted #327152;
 }
@@ -568,7 +569,7 @@ p {
   grid-template-areas:
     "category__1 category__2 category__3"
     "category__1 category__2 category__4"
-    "category__1 category__2 .";
+    "category__5 category__2 category__6";
 }
 
 .category__1 {
@@ -591,6 +592,15 @@ p {
   grid-area: category__5;
 }
 
+.category__6 {
+  grid-area: category__6;
+}
+
+.events__flyer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 @media all and (-ms-high-contrast:none) {
   .menu-section {
     display: -ms-grid;
@@ -605,16 +615,6 @@ p {
 .menu-wrapper ul {
   list-style: none;
   padding: 0;
-}
-
-.menu__category {
-  /*width: 33%;*/
-  /*margin: 0 1rem 1rem 0;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  page-break-inside: avoid;
-  break-inside: avoid;*/
 }
 
 .menu-wrapper p {
@@ -789,7 +789,7 @@ p {
     padding-right: 0px;
     padding-left: 0px;
   }
-  
+
   .donna-wrap {
     width: 115px;
     position: absolute;
@@ -834,9 +834,11 @@ p {
   .menu-section--drink {
     grid-template-areas:
       "category__1"
-      "category__2" 
+      "category__2"
       "category__3"
-      "category__4";
+      "category__4"
+      "category__5"
+      "category__6";
   }
 
   .footer {

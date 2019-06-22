@@ -1,4 +1,4 @@
-    <div class="footer">        
+    <div class="footer">
       <div class="container w-container">
         <div class="dog-wrap">
           <img src="<?php echo get_template_directory_uri(); ?>/images/sunset-front-left.svg" alt="" class="dog-front-left">
@@ -11,10 +11,10 @@
           <img src="<?php echo get_template_directory_uri(); ?>/images/sunset-donna-cherry.svg" data-w-id="0aae5f4e-d91e-bad6-a1e4-134a692e885b" style="-webkit-transform:translate3d(23PX, 0, 0) scale3d(0.7, 0.7, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(23PX, 0, 0) scale3d(0.7, 0.7, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(23PX, 0, 0) scale3d(0.7, 0.7, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(23PX, 0, 0) scale3d(0.7, 0.7, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image-7">
           <img src="<?php echo get_template_directory_uri(); ?>/images/sunset-donna.svg" alt="" class="image-8">
         </div>
-        
+
         <h1 class="heading footer-heading"></h1>
       </div>
-      
+
       <div class="w-container">
         <!-- Begin Mailchimp Signup Form -->
         <div id="mc_embed_signup">
@@ -24,18 +24,18 @@
               <div class="mc-field-group">
                 <input type="email" value="" name="EMAIL" class="required email text-field w-input" id="mce-EMAIL" placeholder="donna@sunsetsocialphl.com"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-button w-button">
               </div>
-                
+
               <div id="mce-responses" class="clear">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    
+              </div>
 
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->      
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d8c5649765efbe7df0f48d1a0_f936fa6d44" tabindex="-1" value=""></div>
             </div>
           </form>
         </div>
-        
+
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
         <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         <!--End mc_embed_signup-->
@@ -43,31 +43,40 @@
 
       <div class="w-container">
         <div class="div-block">
-          
+
           <div>
             <div class="menu-item">Contact Us</div>
-            <?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>  
+            <?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
           </div>
-          
+
           <div class="social-wrapper">
-            <div class="icon">
-              <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="w-inline-block">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/instagram-logo.svg" alt="">
-              </a>
-            </div>
-            <div class="icon">
-              <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="w-inline-block">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-logo-silhouette.svg" alt="">
-              </a>
-            </div>
-            <div class="icon">
-              <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="w-inline-block">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-letter-logo.svg" alt="">
-              </a>
-            </div>
+
+            <?php if(get_field('instagram', 'option')) { ?>
+              <div class="icon">
+                <a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="w-inline-block">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/instagram-logo.svg" alt="">
+                </a>
+              </div>
+            <?php } ?>
+
+            <?php if(get_field('twitter', 'option')) { ?>
+              <div class="icon">
+                <a href="<?php the_field('twitter', 'option'); ?>" target="_blank" class="w-inline-block">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-logo-silhouette.svg" alt="">
+                </a>
+              </div>
+            <?php } ?>
+
+            <?php if(get_field('facebook', 'option')) { ?>
+              <div class="icon">
+                <a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="w-inline-block">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-letter-logo.svg" alt="">
+                </a>
+              </div>
+            <?php } ?>
           </div>
-          
-          <?php wp_nav_menu( array( 'theme_location' => 'menu-3' ) ); ?>  
+
+          <?php wp_nav_menu( array( 'theme_location' => 'menu-3' ) ); ?>
         </div>
       </div>
     </div>
